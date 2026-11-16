@@ -1,0 +1,6 @@
+# 甲方现场便携依赖（Python 3.12）
+# CPU 机器建议执行：
+# python -m pip install -r requirements-lock.txt --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple
+
+numpy==2.2.3
+torch==2.8.0

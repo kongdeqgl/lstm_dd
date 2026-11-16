@@ -1,0 +1,68 @@
+# 算料数值仅作量级参考；本文件定义GraphLSTM第一轮受控参数覆盖。
+parameter_version = "graph-training-parameters-v1"
+scenario_count = 48
+family_count = 12
+replicates_per_family = 4
+random_seed = 20261103
+
+[simulation]
+step_s = 1.0
+duration_choices_s = [300.0, 600.0]
+workers = 1
+
+[cluster]
+node_count_choices = [4, 6, 8, 10, 12, 16]
+formation_choices = ["CIRCULAR", "LINE", "ECHELON"]
+spacing_choices_m = [600.0, 1000.0, 1800.0, 3000.0]
+launch_interval_choices_s = [0.0, 1.0, 3.0]
+
+[motion]
+speed_choices_mps = [850.0, 1000.0, 1150.0, 1300.0, 1450.0]
+origin_altitude_choices_m = [20000.0, 25000.0, 30000.0, 35000.0]
+target_altitude_offset_choices_m = [-5000.0, 0.0, 5000.0]
+heading_choices_deg = [-150.0, -90.0, -45.0, 0.0, 45.0, 90.0, 150.0]
+route_distance_factor = 1.15
+
+[link]
+# 这些运行参数先固定，避免模型无法观察到的设备变化成为隐藏变量。
+frequency_hz = 2400000000.0
+bandwidth_hz = 20000000.0
+transmit_power_w = 20.0
+other_loss_db = 2.0
+noise_figure_db = 5.0
+max_distance_m = 800000.0
+min_sinr_db = -15.0
+max_capacity_bps = 100000000.0
+
+[jammer]
+profile_choices = ["none", "weak", "medium", "strong", "pulse", "dual"]
+strength_reference_w = [0.0, 150.0, 700.0, 1800.0, 4000.0]
+lateral_offset_choices_m = [10000.0, 30000.0, 60000.0]
+altitude_choices_m = [10000.0, 15000.0, 25000.0]
+radius_choices_m = [10000.0, 25000.0, 50000.0]
+angular_velocity_choices_radps = [0.005, 0.01, 0.02]
+frequency_overlap_choices = [0.25, 0.5, 1.0]
+
+[training]
+history_steps = 10
+forecast_steps = 3
+sampling_interval_ms = 1000
+hidden_dim = 64
+link_dim = 64
+lstm_hidden_dim = 64
+graph_layers = 2
+lstm_layers = 1
+dropout = 0.1
+batch_size = 8
+learning_rate = 0.001
+weight_decay = 0.0001
+max_epochs = 80
+patience = 10
+gradient_clip = 1.0
+tolerance_db = 3.0
+training_seeds = [42, 2026, 3107]
+
+[split]
+train_family_count = 8
+validation_family_count = 2
+test_family_count = 2

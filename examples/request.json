@@ -1,0 +1,421 @@
+{
+  "request_id": "demo-001",
+  "node_records": [
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000001000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000001000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000001000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000002000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000002000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000002000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000003000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000003000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000003000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000004000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000004000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000004000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000005000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000005000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000005000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000006000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000006000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000006000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000007000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000007000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000007000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000008000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000008000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000008000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000009000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000009000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000009000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "A",
+      "observation_time_ms": 1700000010000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.0,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "B",
+      "observation_time_ms": 1700000010000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.001,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    },
+    {
+      "node_id": "C",
+      "observation_time_ms": 1700000010000,
+      "member_present": 1,
+      "latitude_deg": 31.0,
+      "longitude_deg": 121.002,
+      "altitude_m": 100.0,
+      "velocity_north_mps": 10.0,
+      "velocity_east_mps": 0.0,
+      "velocity_down_mps": 0.0
+    }
+  ],
+  "relation_records": [
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000001000,
+      "link_quality": 10.0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000002000,
+      "link_quality": 10.5
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000003000,
+      "link_quality": 11.0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000004000,
+      "link_quality": 11.5
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000005000,
+      "link_quality": 12.0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000006000,
+      "link_quality": 12.5
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000007000,
+      "link_quality": 13.0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000008000,
+      "link_quality": 13.5
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000009000,
+      "link_quality": 14.0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "observation_time_ms": 1700000010000,
+      "link_quality": 14.5
+    },
+    {
+      "source_id": "B",
+      "destination_id": "A",
+      "observation_time_ms": 1700000001000,
+      "link_quality": 4.0
+    }
+  ],
+  "query_relations": [
+    {
+      "source_id": "A",
+      "destination_id": "B"
+    },
+    {
+      "source_id": "B",
+      "destination_id": "A"
+    },
+    {
+      "source_id": "A",
+      "destination_id": "C"
+    },
+    {
+      "source_id": "A",
+      "destination_id": "UNKNOWN"
+    }
+  ]
+}

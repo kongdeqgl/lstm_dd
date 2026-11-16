@@ -1,0 +1,92 @@
+{
+  "request_id": "demo-001",
+  "reference_time_ms": 1700000010000,
+  "generated_time_ms": 1700000010000,
+  "status_code": 0,
+  "results": [
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "target_time_ms": 1700000011000,
+      "predicted_value": 14.5,
+      "status_code": 0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "target_time_ms": 1700000012000,
+      "predicted_value": 14.5,
+      "status_code": 0
+    },
+    {
+      "source_id": "A",
+      "destination_id": "B",
+      "target_time_ms": 1700000013000,
+      "predicted_value": 14.5,
+      "status_code": 0
+    },
+    {
+      "source_id": "B",
+      "destination_id": "A",
+      "target_time_ms": 1700000011000,
+      "predicted_value": null,
+      "status_code": 3
+    },
+    {
+      "source_id": "B",
+      "destination_id": "A",
+      "target_time_ms": 1700000012000,
+      "predicted_value": null,
+      "status_code": 3
+    },
+    {
+      "source_id": "B",
+      "destination_id": "A",
+      "target_time_ms": 1700000013000,
+      "predicted_value": null,
+      "status_code": 3
+    },
+    {
+      "source_id": "A",
+      "destination_id": "C",
+      "target_time_ms": 1700000011000,
+      "predicted_value": null,
+      "status_code": 2
+    },
+    {
+      "source_id": "A",
+      "destination_id": "C",
+      "target_time_ms": 1700000012000,
+      "predicted_value": null,
+      "status_code": 2
+    },
+    {
+      "source_id": "A",
+      "destination_id": "C",
+      "target_time_ms": 1700000013000,
+      "predicted_value": null,
+      "status_code": 2
+    },
+    {
+      "source_id": "A",
+      "destination_id": "UNKNOWN",
+      "target_time_ms": 1700000011000,
+      "predicted_value": null,
+      "status_code": 4
+    },
+    {
+      "source_id": "A",
+      "destination_id": "UNKNOWN",
+      "target_time_ms": 1700000012000,
+      "predicted_value": null,
+      "status_code": 4
+    },
+    {
+      "source_id": "A",
+      "destination_id": "UNKNOWN",
+      "target_time_ms": 1700000013000,
+      "predicted_value": null,
+      "status_code": 4
+    }
+  ]
+}

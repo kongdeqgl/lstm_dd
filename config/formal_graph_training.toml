@@ -1,0 +1,111 @@
+# 正式图网络 + LSTM 训练统一配置
+#
+# 使用方法（在 lstm_new 目录执行）：
+# .\.venv\Scripts\python.exe -m sinr_predictor.training.graph_train `
+#   --training-config config\formal_graph_training.toml
+#
+# 相对路径都相对本 TOML 文件所在的 config 目录解析。
+
+[paths]
+# 完整图训练数据索引；跑通流程时可临时改为 smoke_index.json。
+data = "../outputs/complete_graph_training_v1/index.json"
+
+# 模型、评估报告的输出目录。建议每次实验换一个新目录名。
+output = "../outputs/complete_graph_training_v1/formal_model"
+
+
+[model]
+# 模型版本会保存进 model.pt，用于识别模型和接口配置。
+model_version = "graph-lstm-v1"
+
+# 目标指标编码；当前 1 表示 SINR。
+target_metric_code = 1
+
+# 相邻时隙的间隔，单位毫秒。
+sampling_interval_ms = 1000
+
+# 每个样本使用过去 10 张时隙图。
+history_steps = 10
+
+# 每条查询链路直接预测未来 3 个时隙的 SINR。
+forecast_steps = 3
+
+# 节点状态超过该时长未更新时不再作为有效输入。
+max_node_age_ms = 2000
+
+# 链路 SINR 超过该时长未更新时不再作为有效输入。
+max_link_age_ms = 2000
+
+# 历史窗口中至少 80% 的 SINR 时隙需有有效观测。
+min_observation_ratio = 0.8
+
+# 历史窗口内最多允许连续缺失 2 个时隙。
+max_consecutive_missing_steps = 2
+
+# 节点超过 5 秒未观测后再出现，开启新的连续会话。
+continuity_gap_ms = 5000
+
+# 历史缓存保留 10 分钟，须覆盖历史窗口和有效性检查。
+cache_retention_ms = 600000
+
+
+[network]
+# 节点编码、边编码和图消息的隐藏维度。
+hidden_dim = 64
+
+# 每个时隙交给 LSTM 前的链路空间表示维度。
+link_dim = 64
+
+# LSTM 隐藏状态维度。
+lstm_hidden_dim = 64
+
+# 有向图消息传递层数；层数越多，可聚合更远的邻居。
+graph_layers = 2
+
+# 单向 LSTM 层数。
+lstm_layers = 1
+
+# LSTM 多层之间的 dropout；只有 lstm_layers > 1 时才生效。
+dropout = 0.0
+
+# graph=完整图网络；endpoints=只使用两端；quality=只使用 SINR 历史。
+spatial_mode = "graph"
+
+
+[training]
+# 最多训练轮数；可能因验证集早停而提前结束。
+epochs = 30
+
+# 验证集连续 8 轮没有足够改善时停止训练。
+patience = 8
+
+# 每次反向传播累积的图历史样本数；内存不足时可改为 2。
+batch_size = 4
+
+# AdamW 学习率。
+learning_rate = 0.001
+
+# AdamW 权重衰减。
+weight_decay = 0.0001
+
+# 梯度范数裁剪阈值，用于抑制梯度爆炸。
+gradient_clip = 1.0
+
+# 验证 RMSE 至少改善该 dB 值才算新的最优轮次。
+min_delta_db = 0.00001
+
+# 随机种子，用于任务分区、参数初始化和训练顺序复现。
+seed = 42
+
+# cpu 表示用 CPU；如已安装匹配的 CUDA 版 PyTorch，可改为 cuda。
+device = "cpu"
+
+# PyTorch CPU 计算线程数，可根据机器 CPU 调整。
+threads = 4
+
+# 命中率统计的误差容差，单位 dB。
+tolerance_db = 3.0
+
+# 每隔多少个可用基准时隙构造一个训练样本。
+# 10 可显著降低首次正式训练的时间和内存；需要更密样本时可改为 5 或 1。
+stride_steps = 10

@@ -1,0 +1,68 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "图 LSTM：快速训练（1轮）",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "module": "sinr_predictor.training.graph_train",
+      "args": [
+        "--training-config",
+        "config/formal_graph_training.toml",
+        "--data",
+        "outputs/complete_graph_training_v1/smoke_index.json",
+        "--output",
+        "outputs/debug_smoke_model",
+        "--epochs",
+        "1",
+        "--patience",
+        "1",
+        "--hidden-dim",
+        "16",
+        "--graph-layers",
+        "1",
+        "--stride-steps",
+        "50",
+        "--device",
+        "cpu"
+      ]
+    },
+    {
+      "name": "图 LSTM：正式训练",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "module": "sinr_predictor.training.graph_train",
+      "args": [
+        "--training-config",
+        "config/formal_graph_training.toml",
+        "--output",
+        "outputs/debug_formal_model"
+      ]
+    },
+    {
+      "name": "图 LSTM：正式模型示例推理",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "module": "sinr_predictor",
+      "args": [
+        "--request",
+        "examples/request.json",
+        "--model",
+        "outputs/complete_graph_training_v1/formal_model/model.pt",
+        "--replay-time-ms",
+        "1700000010000",
+        "--output",
+        "outputs/debug_prediction.json"
+      ]
+    }
+  ]
+}
